@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Metodos de Array</title>
+	<style>
+		.mdi {
+			font-size: 2rem;
+		}
+
+		#tiempoTranscurrido {
+			font-size: 3rem;
+		}
+	</style>
+</head>
+<body bgcolor = "#49BFAA">
+	<h1>➡ Trabajando con Array</h1>
+<hr>
+<h2><i style="color:hsl(0, 98%, 50%);"><marquee> Cronómetro-Rayner 🧐</marquee></i></h2>
+<center>
+	<section class="section">
+		<div class="columns">
+			<div class="column has-text-centered">
+				<h2 id="tiempoTranscurrido"></h2>
+				<button class="button is-success is-large" id="Iniciar"><span class="play">▶</span></button>
+				<button class="button is-success is-large" id="Pausar"><span class="mdi mdi-pause">⏸</span></button>
+				<button class="button is-primary is-large" id="Marca"><span class="flag">✔</span></button>
+				<button class="button is-warning is-large" id="Detener"><span class="mdi mdi-stop">⏹</span></button>
+				<div id="numerosMarcas">
+				</div>
+			</div>
+		</div>
+	</section>
+</center>
+<!-- ========================================================================================================== -->
+<hr>
+	<h2>Ejercio de Arrays</h2>
+	<p>Introduce numeros separados por comas</p>
+	<input type="text" id="numerosEjem"></input>
+	<input type="button" value="Cargar ejemplo" onclick="cargarEjemplo();"></input>
+	<br><br><input type="button" value="Calcular"  onclick="calcular();">
+	<br><br><input type="button" value="Reiniciar" onclick="reiniciar();">
+    <p id="Resultado"></p>
+	<!-- ======================================================================================================= -->
+<hr>
+	<b><p id="frases"></p></b>
+	<!-- ======================================================================================================= -->
+<hr>
+	<form>
+	<input type="text" id="colores" placeholder="Ingrese colores"></input>
+	<button onclick="agregaColor(event);">Insertar</button><br>
+	</form>	
+	<div>
+		<ul id="listaC">
+
+		</ul>
+	</div>
+	<!-- ======================================================================================================= -->
+<hr>
+	<h2><i><span id="hora" style="color:hsl(0, 98%, 50%);"></span>  ••••••••••••••••••••••••••••••••••••••••••••••••👈Hora<===>Fecha👉••••••••••••••••••••••••••••••••••••••••••••••••  <span id="fecha" style="color:hsl(0, 98%, 48%);"></span></i></h2>
+
+	<script src="js/Script.js"></script>
+</body>
+</html>
