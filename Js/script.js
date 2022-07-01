@@ -5,17 +5,8 @@ let meses = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','
 setInterval(function(){
   const date = new Date()
   hora.innerHTML = `${date.getHours()} : ${date.getMinutes()} : ${date.getSeconds()}`
-  fecha.innerHTML = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`
+  fecha.innerHTML = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`		
 },1000);
-let x = 0;
-function muestraMeses(){
-  x++;
-  if(x>=meses.length){
-    x = 0;
-  }
-  document.getElementById("fecha").innerHTML=meses[x];
-}
-
 /*function muestraHora(){ 
   let hora;
   hora=new Date();
@@ -24,7 +15,6 @@ function muestraMeses(){
   }
   document.getElementById("hora").innerHTML= muestraHora(); */
 //================================================================
-
 function cargarEjemplo(){
   document.getElementById('numerosEjem').value='6,99,56,15,68';
 }
@@ -57,7 +47,7 @@ function calcular(){
 //===============================================================
 setInterval(muestraFrase,2000);
 
-let frases = ['Solo sé que nada sé','El que la persigue la consigue','Dime con quien andas y te dire quien eres','El que estudia triunfa'];
+let frases = ['➡ Solo sé que nada sé','➡ El que la persigue la consigue','➡ Dime con quien andas y te dire quien eres','➡ El que estudia triunfa'];
 
 let indice = 0;
 function muestraFrase(){
