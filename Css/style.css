@@ -1,0 +1,32 @@
+#maquinadeEscribir{
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 15ch;
+
+    animation: typing 2s steps(25), blink .5s infinite step-end alternate;
+      overflow: hidden;
+}
+@keyframes typing {
+    from {width: 0}
+}
+@keyframes blink {
+    10% {border-color: transparent}
+}
+#rayner{
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 65ch;
+
+    animation: typing 2s steps(80), blink .5s infinite step-end alternate;
+      overflow: hidden;
+}
+@keyframes typing {
+    from {width: 0}
+}
+@keyframes blink {
+    10% {border-color: transparent}
+}
